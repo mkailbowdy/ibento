@@ -1,18 +1,16 @@
 <!doctype html>
 
-<title>My Blog</title>
+<title>All Events</title>
 <head>
     <link rel="stylesheet" href="/app.css">
 </head>
 <body>
     <article>
-        <h1>
-            {{$post->title}}
-        </h1>
+        <h1>{{$event->title}}</h1>
 
         <div>
-            {!! $post->body !!}
+            {!! $event->body; !!}
         </div>
     </article>
-<a href="/">Go back</a>
+<a href="/events">Go back</a>
 </body>
